@@ -13,6 +13,10 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        packagingOptions {
+            exclude 'META-INF/rxjava.properties'
+        }
     }
     buildTypes {
         release {
@@ -30,4 +34,6 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar'
+    implementation 'com.github.akarnokd:rxjava2-interop:0.8.0'
 }

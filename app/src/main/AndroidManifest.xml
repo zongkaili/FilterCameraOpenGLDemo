@@ -26,6 +26,7 @@
 
         <activity android:name=".cameraV2GL.CameraV2Activity"/>
         <activity android:name=".trangleGL.TrangleGLActivity"/>
+        <activity android:name=".airhockey.AirHockeyActivity"/>
     </application>
 
 </manifest>
